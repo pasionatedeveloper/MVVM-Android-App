@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/listPreferredItemHeightLarge"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher_round"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginStart="10dp"
+        android:text="John Doe"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_below="@+id/textViewName"
+        android:layout_marginStart="10dp"
+        android:text="johndoe@yahoo.com"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textViewContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginStart="10dp"
+        android:text="+92-9382948498"
+        android:textColor="@color/black"
+        android:layout_below="@+id/textViewEmail"/>
+
+
+
+
+</RelativeLayout>
